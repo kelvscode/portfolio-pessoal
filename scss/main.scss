@@ -1,0 +1,125 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;  
+}
+
+body{
+    background:#0c0c0c;
+}
+
+.ghost--icon {
+    filter:invert(1);
+    width:1rem;
+    margin-left:1.5em;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.9rem auto;
+    .menu-nav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family:'Courier New', Courier, monospace;
+        align-items: center;
+
+        &__item{
+            margin-left:2.5rem;
+            font-size:1.2rem;
+            & img{
+                width:22px;
+                filter:invert(1);
+            }
+        }
+
+        & a{
+            text-decoration: none;
+            color:#fff;
+            &:hover{
+                color:grey;
+            }
+        }
+        }
+    }
+    button{
+        width:6rem;
+        height:2.2rem;
+        margin-right:1.5em;
+        background-color:#0C0C0C;
+        font-weight: 900;
+        color:white;
+        border:1px solid white;
+        cursor:pointer;
+        &:hover{
+
+        }
+    }
+
+    /* Main text */
+.home{
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    margin:0 auto;
+    margin-left:12vw;
+    margin-top:20vh;
+
+    .image--home{
+        position:absolute;
+        z-index: -1;
+        width:20%;
+        right:10px;
+        bottom:-20vh;
+        overflow: hidden;
+    }
+
+    &__nome{
+        font-size:8rem;
+        color:white;
+        margin-top:1rem;
+        h3{
+            border:2px solid
+        }
+    }
+}
+.home--p{
+    color:rgb(133, 133, 133);
+    width:50%;
+    font-size:1rem;
+    font-weight: bolder;
+}
+.home--p__m{
+    color:#575757;
+    text-transform: uppercase;
+    font-weight: 50;
+    width:58%;
+    letter-spacing: 0.625rem;
+    margin-top:-1.4rem;
+    text-align: end;
+}
+.home--text__small{
+    color:#fff;
+    letter-spacing: 5px;
+}
+
+.home--p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    width:60%;
+    color:rgb(96, 96, 96);
+    padding:2rem;
+    line-height: 1.5rem;
+}
+
+.btn--home{
+    width:20vw;
+    height:7vh;
+    margin-left: 10%;
+}
