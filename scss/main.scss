@@ -123,3 +123,64 @@ header {
     height:7vh;
     margin-left: 10%;
 }
+
+.sobre {
+    margin-left:15%;
+    margin-right:10%;
+    color: #ebebeb;
+    background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .title--sobre{
+        font-size:3rem;
+        margin-bottom: 2vh;
+        display:flex;
+        justify-content: center;
+        margin-top:0.8rem;
+        &:hover{
+            font-size:3.1rem;
+            color:#429cbf;
+        }
+    }
+    .p--sobre{
+        width:90%;
+        margin:0 auto;
+        text-decoration: none;
+        font-size:1.25rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 4vh;
+        color:#ebebeb;
+        a {
+            color:#ebebeb;
+        }
+        a:hover {
+            color: #1d5a72;
+        }
+    }
+    .p--sobre::before{
+        content:'';
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        border-left: 0.1875rem solid white;
+    }
+}
+.exp--pro{
+    margin-left: 10%;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .title--exp{
+        font-size:2em;
+    &__info {
+        font-size:0.5em;
+        text-align:center;
+        margin-top:1vh;
+        margin-left:2vw;
+    }
+    }
+}
