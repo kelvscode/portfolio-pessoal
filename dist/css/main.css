@@ -165,6 +165,7 @@ button {
 }
 
 .exp--pro {
+  margin-top: 2.5rem;
   margin-left: 10%;
   color: white;
   display: flex;
@@ -179,4 +180,64 @@ button {
   text-align: center;
   margin-top: 1vh;
   margin-left: 2vw;
+}
+
+.skills--title {
+  font-size: 1.5rem;
+  color: #ebebeb;
+  text-align: center;
+}
+
+.container--tec {
+  background-color: #ebebeb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #0e0e0e;
+  margin-top: 2rem;
+}
+.container--tec__items {
+  margin: 0 auto;
+  padding: 0.8rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projetos {
+  color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1.25rem;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.projetos .title--projetos {
+  margin: auto 0;
+}
+.projetos .projeto--info {
+  margin: 0 auto;
+  padding: 0.6rem;
+}
+.projetos .projeto--item {
+  background-color: #161616;
+  padding: 0.3rem;
+  border: 1px solid white;
+}
+
+.button-project {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 50%;
+}
+
+#kirby {
+  position: absolute;
+  width: 10rem;
+  margin-top: 1rem;
+  z-index: -1;
+  right: 0;
 }/*# sourceMappingURL=main.css.map */
