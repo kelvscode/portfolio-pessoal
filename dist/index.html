@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=PT+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=PT+Sans&display=swap" rel="stylesheet"> 
     <title>Kelvin Vieira - Portfolio</title>
 </head>
 <body>
     <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burguer">
+                
+            </span>
+        </div>
         <img src="../img/ghost-solid.svg" alt="Logotipo do header" height="30" width="40" class="ghost--icon">
         <nav class="nav">
-            <ul class="menu-nav">
+            <ul class="menu-nav js-menu">
                 <li class="menu-nav__item">
-                   <a href="#">Home</a>
+                   <a href="#home">Home</a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="#">Sobre</a>
+                    <a href="#sobre">Sobre</a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="#">Experiência</a>
+                    <a href="#experiencia">Experiência</a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="#">Habilidades</a>
+                    <a href="#habilidades">Habilidades</a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="#">Projetos</a>
+                    <a href="#projetos">Projetos</a>
                 </li>
                 <li class="menu-nav__item">
                     <a href="https://www.linkedin.com/in/kelvin-vieira-3258b9161/" target="_blank"><img src="../img/linkedin-brands.svg" alt="Logotipo do linkedin"></a>
@@ -37,14 +42,14 @@
                     <a href="https://github.com/kelvscode" target="_blank"><img src="../img/github-brands.svg" alt="Logotipo do linkedin"></a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="#">Contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
         <button>Diga oi</button>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <img src="../img/imagem3d.png" alt="Imagem 3d de personagem animado." class="image--home">
             <h4 class="home--text__small">Olá, me chamo</h4>
             <h1 class="home__nome">Kelvin 
@@ -53,7 +58,7 @@
             <p class="home--p">Sou um desenvolvedor web com foco em front-end (utilizo primordialmente JS, HTML, SCSS e React), entusiasta tecnológico, designer gráfico e estou focando em melhorar meus conhecimentos como desenvolvedor. Logo abaixo, poderá encontrar <span class="word--home_color">todos</span> os meus projetos! </p>
             <button class="btn--home">Github</button>
         </section>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="sobre--info">
                 <h3 class="title--sobre">./sobre mim~</h3>
                 <p class="p--sobre">Olá novamente! Eu sou apaixonado por tecnologia, games, café, lofi e por desenvolvimento pessoal, tanto que aprendi grande parte de minhas habilidades de modo autodidata. Sou nível C2 Proeficiente em Inglês <a href="https://www.efset.org/cert/G4gi6p" target="_blank">(Certificação EFSET)</a>, atualmente estudo coreano como meu terceiro idioma e adoro tecnologia desde que me entendo como pessoa. Minha jornada começou em meados de 2007, quando fazia manutenção de computadores, o que me ensinou sobre hardware, sistemas, aumentou a minha paixão sobre a área e me fez me aprofundar mais! </p>
@@ -61,13 +66,13 @@
                 <button class="btn--curriculum"><a href="url" download="nome-do-arquivo"><img src="../img/download.png" height="10" alt=""> Currículo</a></button>
             </div>
         </section>
-        <section class="exp--pro">
+        <section class="exp--pro" id="experiencia">
             <h3 class="title--exp">
                 ./Experiência
             </h3>
             <h5 class="title--exp__info">Experiência profissional e sobre estudos</h5>
         </section>
-        <section class="habilidades">
+        <section class="habilidades" id="habilidades">
             <h3 class="skills--title">./Habilidades</h3>
         <div class="container--tec">
         <div class="container--tec__items">
@@ -96,7 +101,7 @@
             </div>
         </div>
         </section>
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h3 class="title--projetos">./Projetos</h3>
             <div class="projeto">
                 <img src="" alt="Demonstração visual do projeto">
@@ -128,7 +133,7 @@
             </div>
             </div>
         </section>
-        <section class="contato">
+        <section class="contato" id="contato">
             <img id="kirby" src="../img/kirby.png" alt="Personagem 3d sentado, Kirby."/>
             <h2 class="text--contato">Me dê um oi</h2>
             <h2 class="text--contato_g">Entre em Contato</h2>

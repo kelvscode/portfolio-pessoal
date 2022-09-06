@@ -1,11 +1,10 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-  padding:0;
-  margin:0;  
-}
+@import './resets';
+@import './variables';
+@import './menu';
 
 body{
     background:#0c0c0c;
+    scroll-behavior: smooth;
 }
 
 .ghost--icon {
@@ -13,55 +12,6 @@ body{
     width:1rem;
     margin-left:1.5em;
 }
-
-header {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0.9rem auto;
-    .menu-nav{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        list-style: none;
-        text-transform: uppercase;
-        font-weight: 900;
-        font-family:'Courier New', Courier, monospace;
-        align-items: center;
-
-        &__item{
-            margin-left:2.5rem;
-            font-size:1.2rem;
-            & img{
-                width:22px;
-                filter:invert(1);
-            }
-        }
-
-        & a{
-            text-decoration: none;
-            color:#fff;
-            &:hover{
-                color:grey;
-            }
-        }
-        }
-    }
-    button{
-        width:6rem;
-        height:2.2rem;
-        margin-right:1.5em;
-        background-color:#0C0C0C;
-        font-weight: 900;
-        color:white;
-        border:1px solid white;
-        cursor:pointer;
-        &:hover{
-
-        }
-    }
-
     /* Main text */
 .home{
     height:80vh;
@@ -105,7 +55,7 @@ header {
     text-align: end;
 }
 .home--text__small{
-    color:#fff;
+    color:$text-light;
     letter-spacing: 5px;
 }
 
@@ -199,6 +149,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     padding:2rem;
     color: #0e0e0e;
     margin-top:2rem;
+    margin-bottom:3rem;
     &__items{
         margin:0 auto;
         padding:1rem;
@@ -257,6 +208,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     display:grid;
     grid-template-columns:2fr 2fr;
     margin-top:3rem;
+    margin-bottom:1rem;
     gap:1rem;
     margin-left:20%;
     color: #ebebeb;
@@ -270,4 +222,8 @@ footer{
     justify-content: center;
     color:#ebebeb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }

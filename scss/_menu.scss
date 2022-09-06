@@ -1,0 +1,65 @@
+
+header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.9rem auto;
+    .menu-nav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family:'Courier New', Courier, monospace;
+        align-items: center;
+
+        &__item{
+            margin-left:2.5rem;
+            font-size:1.2rem;
+            & img{
+                width:22px;
+                filter:invert(1);
+            }
+        }
+
+        & a{
+            text-decoration: none;
+            color:$text-light;
+            &:hover{
+                color:grey;
+            }
+        }
+        }
+    }
+    button{
+        width:6rem;
+        height:2.2rem;
+        margin-right:1.5em;
+        background-color:#0C0C0C;
+        font-weight: 900;
+        color:white;
+        border:1px solid white;
+        cursor:pointer;
+    }
+/* Hamburguer menu */
+.menu-btn{
+    position: absolute;
+    z-index:1;
+    top:1rem;
+    height:20px;
+    width:28px;
+    cursor:pointer;
+    @include transition-ease;
+
+    &__burguer{
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width:28px;
+        height:3px;
+        background:white;
+        @include transition-ease;
+    }
+}
