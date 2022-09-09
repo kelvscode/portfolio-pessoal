@@ -12,11 +12,6 @@
 </head>
 <body>
     <header>
-        <div class="menu-btn">
-            <span class="menu-btn__burguer">
-                
-            </span>
-        </div>
         <img src="../img/ghost-solid.svg" alt="Logotipo do header" height="30" width="40" class="ghost--icon">
         <nav class="nav">
             <ul class="menu-nav js-menu">
@@ -54,8 +49,8 @@
             <h4 class="home--text__small">Olá, me chamo</h4>
             <h1 class="home__nome">Kelvin 
                 <span class="home__sobrenome">Vieira</span></h1>
-            <h3 class="home--p__m">Sou um Desenvolvedor Front End</h3>
-            <p class="home--p">Sou um desenvolvedor web com foco em front-end (utilizo primordialmente JS, HTML, SCSS e React), entusiasta tecnológico, designer gráfico e estou focando em melhorar meus conhecimentos como desenvolvedor. Logo abaixo, poderá encontrar <span class="word--home_color">todos</span> os meus projetos! </p>
+            <h3 class="home--p__m">Sou um <span class="auto-type"></span></h3>
+            <p class="home--p">Sou um desenvolvedor web com foco em front-end (utilizo primordialmente JS, HTML, SCSS e React), entusiasta tecnológico, designer gráfico e estou focando em melhorar meus conhecimentos como desenvolvedor. Logo abaixo, poderá encontrar todos os meus projetos! </p>
             <button class="btn--home">Github</button>
         </section>
         <section class="sobre" id="sobre">
@@ -104,31 +99,36 @@
         <section class="projetos" id="projetos">
             <h3 class="title--projetos">./Projetos</h3>
             <div class="projeto">
-                <img src="" alt="Demonstração visual do projeto">
-                <h5 class="projeto--titulo__g">Projeto XYZ</h5>
                 <div class="projeto--item">
+                    <img src="" alt="">
+                    <h5 class="projeto--titulo__g">Projeto XYZ</h5>
                 <p class="projeto--info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit adipisci earum numquam voluptate magnam delectus quia obcaecati nulla, rerum atque cumque commodi, ab corrupti perspiciatis qui molestias excepturi nihil saepe!</p>
-                <button class="proj--live">Veja na prática</button>
-                <button class="proj--git">Acesse o código</button>
-            </div>
-        </div>
-        <div class="projeto--item">
-            <div class="projeto">
-                <img src="" alt="Demonstração visual do projeto">
-                <h5 class="projeto--titulo__g">Projeto WDL</h5>
-                <p class="projeto--info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptates? Non ullam ut consequatur laboriosam sapiente! Voluptatum quaerat consectetur modi recusandae doloremque eius laudantium officia velit omnis laboriosam, aliquam sunt doloribus ab labore corporis nam qui.</p>
+                <div class="btn-flex">
                 <button class="proj--live">Veja na prática</button>
                 <button class="proj--git">Acesse o código</button>
                 </div>
             </div>
-            <div class="projeto--item">
+        </div>
+        <div class="projeto--item">
             <div class="projeto">
-                <img src="" alt="Demonstração visual do projeto">
-                <h5 class="projeto--titulo__g">Projeto HOP</h5>
-                <p class="projeto--info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, eveniet sapiente quas provident expedita sit totam voluptas pariatur tempore, blanditiis cumque, est sunt necessitatibus inventore accusamus. Iure tempore sapiente, et ex, distinctio veritatis, at minima aperiam consequuntur dolores error! Eius labore non consequuntur, earum architecto placeat velit dolore vitae nisi?</p>
-                <div class="button--project">
+                <img src="" alt="">
+                <h5 class="projeto--titulo__g">Projeto WDL</h5>
+                <p class="projeto--info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptates? Non ullam ut consequatur laboriosam sapiente! Voluptatum quaerat consectetur modi recusandae doloremque eius laudantium officia velit omnis laboriosam, aliquam sunt doloribus ab labore corporis nam qui.</p>
+                <div class="btn-flex">
                 <button class="proj--live">Veja na prática</button>
                 <button class="proj--git">Acesse o código</button>
+                </div>
+            </div>
+            </div>
+            <div class="projeto--item">
+            <div class="projeto">
+                <img src="" alt="">
+                <h5 class="projeto--titulo__g">Projeto HOP</h5>
+                <p class="projeto--info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, eveniet sapiente quas provident expedita sit totam voluptas pariatur tempore, blanditiis cumque, est sunt necessitatibus inventore accusamus. Iure tempore sapiente, et ex, distinctio veritatis, at minima aperiam consequuntur dolores error! Eius labore non consequuntur, earum architecto placeat velit dolore vitae nisi?</p>
+                <div class="btn-flex">
+                <button class="proj--live">Veja na prática</button>
+                <button class="proj--git">Acesse o código</button>
+                </div>
             </div>
             </div>
             </div>
@@ -146,5 +146,16 @@
     <footer>
         <p class="footer--text">Design por Kelvin Vieira.</p>
     </footer>
+
+    <!-- JS para criar o efeito de mensagem sendo digitada -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Desenvolvedor Front-end", "Designer Gráfico","Entusiasta tech"],
+            typeSpeed: 120,
+            backSpeed: 120,
+            loop: true,
+        }) 
+    </script>
 </body>
 </html>

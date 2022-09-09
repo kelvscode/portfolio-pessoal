@@ -28,9 +28,9 @@ header {
             text-decoration: none;
             color:$text-light;
             &:hover{
-                color:grey;
+                color:#8338ec;
+                }
             }
-        }
         }
     }
     button{
@@ -43,23 +43,3 @@ header {
         border:1px solid white;
         cursor:pointer;
     }
-/* Hamburguer menu */
-.menu-btn{
-    position: absolute;
-    z-index:1;
-    top:1rem;
-    height:20px;
-    width:28px;
-    cursor:pointer;
-    @include transition-ease;
-
-    &__burguer{
-        position: absolute;
-        right: 0;
-        top: 0.5rem;
-        width:28px;
-        height:3px;
-        background:white;
-        @include transition-ease;
-    }
-}
