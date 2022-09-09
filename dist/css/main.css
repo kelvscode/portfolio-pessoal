@@ -40,12 +40,22 @@ button {
   color: white;
   border: 1px solid white;
   cursor: pointer;
+  position: static;
 }
 
+@media (min-width: 1300px) {
+  header {
+    margin-left: 10%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,6 +64,7 @@ body {
 }
 
 .ghost--icon {
+  position: static;
   filter: invert(1);
   width: 1rem;
   margin-left: 1.5em;
@@ -107,7 +118,8 @@ body {
 
 .home--text__small {
   color: #fff;
-  letter-spacing: 5px;
+  letter-spacing: 3.5px;
+  font-size: 1.5rem;
 }
 
 .auto-type {
@@ -176,21 +188,31 @@ body {
 
 .exp--pro {
   margin-top: 2.5rem;
-  margin-left: 10%;
   margin-bottom: 1rem;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.exp--pro .texto {
+  background: white;
+  margin-top: 1rem;
+}
+.exp--pro .texto p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
+  color: #101010;
+  width: 80%;
 }
 .exp--pro .title--exp {
   font-size: 2em;
 }
 .exp--pro .title--exp__info {
-  font-size: 0.5em;
-  text-align: center;
-  margin-top: 1vh;
-  margin-left: 2vw;
+  font-size: 1em;
+  margin-top: 0.2rem;
 }
 
 .skills--title {
@@ -300,10 +322,6 @@ footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @media (max-width: 600px) {
   .home .home__nome {
     margin-top: 1rem;
@@ -321,6 +339,9 @@ html {
     width: 80vw;
     letter-spacing: 0.3rem;
   }
+  .home--text__small {
+    font-size: 1rem;
+  }
   .btn--home {
     margin: 0 auto;
   }
@@ -330,7 +351,7 @@ html {
   }
   .container--tec {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -358,6 +379,18 @@ html {
   }
 }
 @media screen and (max-width: 980px) {
+  .home--text__small {
+    font-size: 1rem;
+  }
+  .menu-nav__item {
+    margin-left: 1.5rem;
+  }
+  .menu-nav__item a {
+    font-size: 1rem;
+  }
+  .menu-nav__item a img {
+    width: 18px;
+  }
   .home__nome {
     font-size: 7rem;
     margin-top: 0;
@@ -403,5 +436,56 @@ html {
   #kirby {
     width: 7rem;
     margin-top: 9rem;
+  }
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  header button {
+    position: absolute;
+    top: 1rem;
+    right: 30%;
+  }
+  .ghost--icon {
+    position: absolute;
+    top: 1rem;
+    width: 2rem;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li a {
+    padding: 0.3rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */

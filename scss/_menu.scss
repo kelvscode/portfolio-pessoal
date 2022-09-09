@@ -42,4 +42,11 @@ header {
         color:white;
         border:1px solid white;
         cursor:pointer;
+        position: static;
+    }
+
+    @media (min-width:1300px){
+        header {
+            margin-left:10%;
+        }
     }

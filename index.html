@@ -13,8 +13,14 @@
 <body>
     <header>
         <img src="../img/ghost-solid.svg" alt="Logotipo do header" height="30" width="40" class="ghost--icon">
-        <nav class="nav">
-            <ul class="menu-nav js-menu">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul class="menu-nav js-menu">
                 <li class="menu-nav__item">
                    <a href="#home">Home</a>
                 </li>
@@ -40,8 +46,12 @@
                     <a href="#contato">Contato</a>
                 </li>
             </ul>
+        </div>
         </nav>
         <button>Diga oi</button>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
     </header>
     <main>
         <section class="home" id="home">
@@ -66,6 +76,9 @@
                 ./Experiência
             </h3>
             <h5 class="title--exp__info">Experiência profissional e sobre estudos</h5>
+            <div class="texto">
+            <p class="title--exp__resume"> Como me apresentei acima, sou um entusiasta da tecnologia. Minha jornada tecnóloga começou desde cedo, ainda criança, fazendo manutenção de computadores e construindo as minhas próprias "máquinas" com peças que sobravam. Após isso, comecei a me aventurar em sistemas, participei de alguns CTF como os do HTB(Hack The Box), continuei a minha paixão, comecei aprendendo sobre lógica da programação, sistemas, procedimentos red team, estrutura de dados e hoje, ainda em aprendizado, estou disposto a trazer aplicações melhores.</p>
+            </div>
         </section>
         <section class="habilidades" id="habilidades">
             <h3 class="skills--title">./Habilidades</h3>
@@ -157,5 +170,6 @@
             loop: true,
         }) 
     </script>
+    <script src="./dist/main.js"></script>
 </body>
 </html>
