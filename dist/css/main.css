@@ -20,7 +20,7 @@ header .menu-nav__item {
   font-size: 1.2rem;
 }
 header .menu-nav__item img {
-  width: 22px;
+  width: 1.375rem;
   filter: invert(1);
 }
 header .menu-nav a {
@@ -38,7 +38,7 @@ button {
   background-color: #0C0C0C;
   font-weight: 900;
   color: white;
-  border: 1px solid white;
+  border: 0.0625rem solid white;
   cursor: pointer;
   position: static;
 }
@@ -83,7 +83,7 @@ body {
   position: absolute;
   z-index: -1;
   width: 20%;
-  right: 10px;
+  right: 0.625rem;
   bottom: -20vh;
   overflow: hidden;
 }
@@ -93,7 +93,7 @@ body {
   margin-top: 1rem;
 }
 .home__nome h3 {
-  border: 2px solid;
+  border: 0.125rem solid;
 }
 .home__sobrenome {
   color: #8338ec;
@@ -118,7 +118,7 @@ body {
 
 .home--text__small {
   color: #fff;
-  letter-spacing: 3.5px;
+  letter-spacing: 0.2188rem;
   font-size: 1.5rem;
 }
 
@@ -137,9 +137,26 @@ body {
 }
 
 .btn--home {
-  width: 20vw;
+  width: 25vw;
   height: 7vh;
   margin-left: 10%;
+  letter-spacing: 0.1875rem;
+}
+
+.btn--curriculum {
+  border-radius: 0.625rem 0.75rem;
+  padding: 0.3rem;
+  width: 30%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+}
+.btn--curriculum img {
+  filter: invert(1);
+}
+.btn--curriculum a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .sobre {
@@ -147,21 +164,21 @@ body {
   margin-right: 10%;
   color: #ebebeb;
   background: rgba(255, 255, 255, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5313rem);
+  -webkit-backdrop-filter: blur(0.5313rem);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.3);
 }
 .sobre .title--sobre {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2vh;
   display: flex;
   justify-content: center;
   margin-top: 0.8rem;
 }
 .sobre .title--sobre:hover {
-  font-size: 3.1rem;
+  font-size: 2.2rem;
   color: #429cbf;
 }
 .sobre .p--sobre {
@@ -265,7 +282,7 @@ body {
 .projetos .projeto--titulo__g {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
   display: flex;
   justify-content: center;
 }
@@ -277,7 +294,7 @@ body {
 .projetos .projeto--item {
   background-color: #161616;
   padding: 0.3rem;
-  border: 1px solid white;
+  border: 0.0625rem solid white;
 }
 .projetos .btn-flex {
   display: flex;
@@ -311,6 +328,9 @@ body {
   margin-left: 20%;
   color: #ebebeb;
 }
+.contato__email {
+  color: #fff;
+}
 
 footer {
   background-color: #171717;
@@ -325,7 +345,7 @@ footer {
 @media (max-width: 600px) {
   .home .home__nome {
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 2rem;
     margin-bottom: 2rem;
   }
@@ -339,11 +359,16 @@ footer {
     width: 80vw;
     letter-spacing: 0.3rem;
   }
+  .btn--curriculum {
+    padding: 0.3rem;
+    width: 40%;
+  }
   .home--text__small {
     font-size: 1rem;
   }
   .btn--home {
     margin: 0 auto;
+    margin-bottom:10%;
   }
   .sobre {
     width: 85vw;
@@ -389,7 +414,7 @@ footer {
     font-size: 1rem;
   }
   .menu-nav__item a img {
-    width: 18px;
+    width: 1.125rem;
   }
   .home__nome {
     font-size: 7rem;
@@ -445,15 +470,15 @@ footer {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 1.875rem;
+  height: 1.3125rem;
 }
 
 .toggle-button .bar {
-  height: 3px;
+  height: 0.1875rem;
   width: 100%;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 @media (max-width: 800px) {
