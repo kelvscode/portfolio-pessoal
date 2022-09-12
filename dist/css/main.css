@@ -3,7 +3,10 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0.9rem auto;
+  padding: 0.5rem;
+  z-index: 999;
+  background-color: #0C0C0C;
+  border-bottom: 2px solid white;
 }
 header .menu-nav {
   display: flex;
@@ -20,7 +23,7 @@ header .menu-nav__item {
   font-size: 1.2rem;
 }
 header .menu-nav__item img {
-  width: 1.375rem;
+  width: 22px;
   filter: invert(1);
 }
 header .menu-nav a {
@@ -38,7 +41,7 @@ button {
   background-color: #0C0C0C;
   font-weight: 900;
   color: white;
-  border: 0.0625rem solid white;
+  border: 1px solid white;
   cursor: pointer;
   position: static;
 }
@@ -63,10 +66,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.roxo {
+  color: purple;
+}
+
 .ghost--icon {
   position: static;
   filter: invert(1);
-  width: 1rem;
+  width: 3rem;
   margin-left: 1.5em;
 }
 
@@ -83,17 +90,17 @@ body {
   position: absolute;
   z-index: -1;
   width: 20%;
-  right: 0.625rem;
+  right: 10px;
   bottom: -20vh;
   overflow: hidden;
 }
 .home__nome {
   font-size: 8rem;
   color: white;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .home__nome h3 {
-  border: 0.125rem solid;
+  border: 2px solid;
 }
 .home__sobrenome {
   color: #8338ec;
@@ -118,7 +125,7 @@ body {
 
 .home--text__small {
   color: #fff;
-  letter-spacing: 0.2188rem;
+  letter-spacing: 3.5px;
   font-size: 1.5rem;
 }
 
@@ -137,14 +144,13 @@ body {
 }
 
 .btn--home {
-  width: 25vw;
+  width: 20vw;
   height: 7vh;
   margin-left: 10%;
-  letter-spacing: 0.1875rem;
 }
 
 .btn--curriculum {
-  border-radius: 0.625rem 0.75rem;
+  border-radius: 10px 12px;
   padding: 0.3rem;
   width: 30%;
   margin-left: 2rem;
@@ -164,21 +170,21 @@ body {
   margin-right: 10%;
   color: #ebebeb;
   background: rgba(255, 255, 255, 0);
-  border-radius: 1rem;
-  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0.5313rem);
-  -webkit-backdrop-filter: blur(0.5313rem);
-  border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .sobre .title--sobre {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2vh;
   display: flex;
   justify-content: center;
   margin-top: 0.8rem;
 }
 .sobre .title--sobre:hover {
-  font-size: 2.2rem;
+  font-size: 3.1rem;
   color: #429cbf;
 }
 .sobre .p--sobre {
@@ -279,22 +285,59 @@ body {
 .projetos .title--projetos {
   margin: auto 0;
 }
+.projetos .projeto--img {
+  display: flex;
+  margin: 0.5rem auto 1rem;
+  width: 90%;
+  filter: grayscale(1);
+}
+.projetos .projeto--img:first-child {
+  filter: grayscale(0);
+}
+.projetos .projeto--img:hover {
+  filter: grayscale(0);
+}
 .projetos .projeto--titulo__g {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.1875rem;
+  letter-spacing: 3px;
   display: flex;
   justify-content: center;
 }
+.projetos button {
+  width: 8vw;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+.projetos button:hover {
+  filter: invert(1);
+}
+.projetos button a {
+  text-decoration: none;
+  color: #fff;
+}
 .projetos .projeto--info {
   margin: 0 auto;
-  padding: 0.6rem;
   font-size: 0.85rem;
+  width: 90%;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .projetos .projeto--item {
-  background-color: #161616;
-  padding: 0.3rem;
-  border: 0.0625rem solid white;
+  background: rgba(13, 13, 13, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(13, 13, 13, 0.33);
+}
+.projetos .projeto--item:hover {
+  background-color: rgb(186, 186, 186);
+  color: black;
 }
 .projetos .btn-flex {
   display: flex;
@@ -342,10 +385,23 @@ footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  top: 0;
+}
+
 @media (max-width: 600px) {
+  header {
+    background-color: transparent;
+  }
   .home .home__nome {
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 2rem;
     margin-bottom: 2rem;
   }
@@ -368,7 +424,6 @@ footer {
   }
   .btn--home {
     margin: 0 auto;
-    margin-bottom:10%;
   }
   .sobre {
     width: 85vw;
@@ -404,6 +459,9 @@ footer {
   }
 }
 @media screen and (max-width: 980px) {
+  .projetos button {
+    width: 25vw;
+  }
   .home--text__small {
     font-size: 1rem;
   }
@@ -414,7 +472,7 @@ footer {
     font-size: 1rem;
   }
   .menu-nav__item a img {
-    width: 1.125rem;
+    width: 18px;
   }
   .home__nome {
     font-size: 7rem;
@@ -470,18 +528,22 @@ footer {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 1.875rem;
-  height: 1.3125rem;
+  width: 30px;
+  height: 21px;
 }
 
 .toggle-button .bar {
-  height: 0.1875rem;
+  height: 3px;
   width: 100%;
   background-color: white;
-  border-radius: 0.625rem;
+  border-radius: 10px;
 }
 
 @media (max-width: 800px) {
+  header {
+    position: static;
+    border-bottom: none;
+  }
   header button {
     position: absolute;
     top: 1rem;
