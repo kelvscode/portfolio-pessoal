@@ -2,6 +2,7 @@
 @import './menu';
 @import './resets';
 
+
 .roxo {
     color:purple;
 }
@@ -64,14 +65,14 @@
 }
 
 .auto-type{
-    color:#fff;
+    color:$text-light;
 }
 .home--p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size:1.2rem;
     width:60%;
-    color:rgb(96, 96, 96);
+    color:rgb(175, 175, 175);
     padding:2rem;
     line-height: 1.5rem;
 }
@@ -80,6 +81,10 @@
     width:20vw;
     height:7vh;
     margin-left: 10%;
+    a{
+        text-decoration: none;
+        color:$text-light;
+    }
 }
 .btn--curriculum{
     border-radius: 10px 12px;
@@ -93,7 +98,7 @@
     }
     a{
         text-decoration: none;
-        color:#fff;
+        color:$text-light;
     }
 }
 
@@ -102,12 +107,11 @@
     margin-right:10%;
     color: #ebebeb;
     background: rgba(255, 255, 255, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.5px);
--webkit-backdrop-filter: blur(8.5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     .title--sobre{
         font-size:3rem;
         margin-bottom: 2vh;
@@ -124,7 +128,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         margin:0 auto;
         text-decoration: none;
         font-size:1.25rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $text-family;
         margin-bottom: 4vh;
         color:#ebebeb;
         a {
@@ -143,6 +147,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .exp--pro{
+    margin-left:5%;
     margin-top:2.5rem;
     margin-bottom:1rem;
     color:white;
@@ -151,37 +156,50 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-content: center;
     .texto{
-        background: white;
         margin-top:1rem;
         p{
-            font-size:1.2rem;
+            background: rgba(23, 23, 23, 0.3);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.4px);
+            -webkit-backdrop-filter: blur(9.4px);
+            border: 1px solid rgba(23, 23, 23, 0.3);font-size:1.2rem;
             margin: 0 auto;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family:$text-family;
             padding: 1rem;
-            color:#101010;
+            color:$text-light;
             width:80%;
         }
     }
     .title--exp{
         font-size:2em;
     &__info {
+        width:70%;
         font-size:1em;
         margin-top:0.2rem;
-    }
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
     }
 }
 .skills--title {
     font-size:1.5rem;
     color:#ebebeb;
     text-align: center;
+    margin-top:2rem;
 }
 .container--tec{
-    background-color: #ebebeb;
+    background: rgba(23, 23, 23, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(23, 23, 23, 0.3);
     display:flex;
     align-items: center;
     justify-content: space-around;
     padding:2rem;
-    color: #0e0e0e;
+    color: $text-light;
     margin-top:2rem;
     margin-bottom:3rem;
     &__items{
@@ -189,7 +207,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         padding:1rem;
         font-weight: 600;
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $text-family;
         align-items: center;
     }
 }
@@ -200,6 +218,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-items: center;
     margin-bottom:0.4rem;
+    &:hover{
+        background-color:white;
+        padding:1rem;
+        filter:grayscale(1);
+    }
 }
 
 .projetos {
@@ -238,7 +261,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         margin:0 auto;
         margin-bottom:1rem;
         text-transform: lowercase;
-        color:#fff;
+        color:$text-light;
         font-size:0.8rem;
         border-radius:6px;
         &:hover{
@@ -247,7 +270,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
     button a{
         text-decoration: none;
-        color:#fff;
+        color:$text-light;
     }
     .projeto--info{
         margin:0 auto;
@@ -300,8 +323,23 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     gap:1rem;
     margin-left:20%;
     color: #ebebeb;
+    font-family: $text-family;
+    a{
+        letter-spacing: 2px;
+        font-family: $text-family;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bolder;
+    }
     &__email{
-        color:#fff;
+        color:$text-light;
+    }
+    button{
+        width:15vw;
+    }
+    button a{
+        text-decoration: none;
+        color:$text-light;
     }
 }
 
@@ -332,16 +370,21 @@ header {
         background-color:transparent;
     }
 .home{
+    button a{
+        text-decoration: none;
+        color:$text-light;
+    }
     .home__nome{
         margin-top:1rem;
         font-size:3.5rem;
-        line-height: 2rem;
+        line-height: 3rem;
         margin-bottom:2rem;
     }
     .home--p{
-        font-size:1.3rem;
+        font-size:$font-text-small;
         width:100%;
         margin:0 auto;
+
         &__m{
             font-size:0.6rem;
             width:80vw;
@@ -349,10 +392,17 @@ header {
         }
    }
 }
+
+.contato{
+    button{
+        width:50vw;
+    }
+}
 .btn--curriculum{
     padding:0.3rem;
     width:40%;
 }
+
 .home--text__small{
     font-size:1rem;
 }
@@ -360,9 +410,36 @@ header {
     margin:0 auto;
 }
 .sobre{
-    width:85vw;
+    width:80vw;
     margin:0 auto;
+    .title--sobre{
+        font-size:1.7rem;
+        &:hover{
+            font-size:1.8rem;
+        }
     }
+    .p--sobre{
+        text-align: left;
+        font-size:$font-text-small;
+        }
+    }
+    .texto{
+        p{
+            font-size:$font-text-small;
+        }
+    }
+
+#experiencia{
+    h3{
+        font-size:1.5rem;
+    }
+    h5{
+        font-size:0.8rem;
+    }  
+    p {
+        font-size:0.8rem;
+    }
+} 
 .container--tec {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -452,7 +529,7 @@ header {
     }
     }
 #kirby{
-        width:7rem;
+        width:5rem;
         margin-top:9rem;
     }
 }

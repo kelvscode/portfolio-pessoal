@@ -138,7 +138,7 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
   width: 60%;
-  color: rgb(96, 96, 96);
+  color: rgb(175, 175, 175);
   padding: 2rem;
   line-height: 1.5rem;
 }
@@ -147,6 +147,10 @@ body {
   width: 20vw;
   height: 7vh;
   margin-left: 10%;
+}
+.btn--home a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .btn--curriculum {
@@ -210,6 +214,7 @@ body {
 }
 
 .exp--pro {
+  margin-left: 5%;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   color: white;
@@ -219,38 +224,52 @@ body {
   justify-content: center;
 }
 .exp--pro .texto {
-  background: white;
   margin-top: 1rem;
 }
 .exp--pro .texto p {
+  background: rgba(23, 23, 23, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(23, 23, 23, 0.3);
   font-size: 1.2rem;
   margin: 0 auto;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 1rem;
-  color: #101010;
+  color: #fff;
   width: 80%;
 }
 .exp--pro .title--exp {
   font-size: 2em;
 }
 .exp--pro .title--exp__info {
+  width: 70%;
   font-size: 1em;
   margin-top: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .skills--title {
   font-size: 1.5rem;
   color: #ebebeb;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .container--tec {
-  background-color: #ebebeb;
+  background: rgba(23, 23, 23, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(23, 23, 23, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 2rem;
-  color: #0e0e0e;
+  color: #fff;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
@@ -270,6 +289,11 @@ body {
   align-items: center;
   justify-items: center;
   margin-bottom: 0.4rem;
+}
+.img--tec:hover {
+  background-color: white;
+  padding: 1rem;
+  filter: grayscale(1);
 }
 
 .projetos {
@@ -370,8 +394,23 @@ body {
   gap: 1rem;
   margin-left: 20%;
   color: #ebebeb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contato a {
+  letter-spacing: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
 }
 .contato__email {
+  color: #fff;
+}
+.contato button {
+  width: 15vw;
+}
+.contato button a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -399,14 +438,18 @@ header {
   header {
     background-color: transparent;
   }
+  .home button a {
+    text-decoration: none;
+    color: #fff;
+  }
   .home .home__nome {
     margin-top: 1rem;
     font-size: 3.5rem;
-    line-height: 2rem;
+    line-height: 3rem;
     margin-bottom: 2rem;
   }
   .home .home--p {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     width: 100%;
     margin: 0 auto;
   }
@@ -414,6 +457,9 @@ header {
     font-size: 0.6rem;
     width: 80vw;
     letter-spacing: 0.3rem;
+  }
+  .contato button {
+    width: 50vw;
   }
   .btn--curriculum {
     padding: 0.3rem;
@@ -426,8 +472,30 @@ header {
     margin: 0 auto;
   }
   .sobre {
-    width: 85vw;
+    width: 80vw;
     margin: 0 auto;
+  }
+  .sobre .title--sobre {
+    font-size: 1.7rem;
+  }
+  .sobre .title--sobre:hover {
+    font-size: 1.8rem;
+  }
+  .sobre .p--sobre {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .texto p {
+    font-size: 0.9rem;
+  }
+  #experiencia h3 {
+    font-size: 1.5rem;
+  }
+  #experiencia h5 {
+    font-size: 0.8rem;
+  }
+  #experiencia p {
+    font-size: 0.8rem;
   }
   .container--tec {
     display: grid;
@@ -517,7 +585,7 @@ header {
     margin-bottom: 1rem;
   }
   #kirby {
-    width: 7rem;
+    width: 5rem;
     margin-top: 9rem;
   }
 }
