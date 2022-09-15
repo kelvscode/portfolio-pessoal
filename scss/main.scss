@@ -120,7 +120,7 @@
         margin-top:0.8rem;
         &:hover{
             font-size:3.1rem;
-            color:#429cbf;
+            color:#8338ec;
         }
     }
     .p--sobre{
@@ -135,7 +135,7 @@
             color:#ebebeb;
         }
         a:hover {
-            color: #1d5a72;
+            color: #8338ec;
         }
     }
     .p--sobre::before{
@@ -197,13 +197,11 @@
     border: 1px solid rgba(23, 23, 23, 0.3);
     display:flex;
     align-items: center;
-    justify-content: space-around;
-    padding:2rem;
+    justify-content: space-between;
+    padding:2rem 13rem;
     color: $text-light;
     margin-top:2rem;
-    margin-bottom:3rem;
     &__items{
-        margin:0 auto;
         padding:1rem;
         font-weight: 600;
         text-align: center;
@@ -212,12 +210,12 @@
     }
 }
 .img--tec{
-    width:4.3rem;
-    height:4.3rem;
+    width:4rem;
+    height:4rem;
     display:flex;
     align-items: center;
     justify-items: center;
-    margin-bottom:0.4rem;
+    margin-bottom:0.3rem;
     &:hover{
         background-color:white;
         padding:1rem;
@@ -286,7 +284,7 @@
         -webkit-backdrop-filter: blur(5.8px);
         border: 1px solid rgba(13, 13, 13, 0.33);
         &:hover{
-            background-color: rgb(186, 186, 186);
+            background-color: #798289;
             color:black;
         }
     }
@@ -343,7 +341,7 @@
 }
 
 footer{
-    background-color:#171717;
+    background-color:#111111;
     display:flex;
     height:2.8rem;
     align-items: center;

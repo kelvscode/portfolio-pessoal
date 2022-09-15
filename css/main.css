@@ -28,7 +28,7 @@ header .menu-nav__item img {
 }
 header .menu-nav a {
   text-decoration: none;
-  color: #fff;
+  color: #E6E6E6;
 }
 header .menu-nav a:hover {
   color: #8338ec;
@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  background: #0c0c0c;
+  background: #050505;
   scroll-behavior: smooth;
 }
 
@@ -124,13 +124,13 @@ body {
 }
 
 .home--text__small {
-  color: #fff;
+  color: #E6E6E6;
   letter-spacing: 3.5px;
   font-size: 1.5rem;
 }
 
 .auto-type {
-  color: #fff;
+  color: #E6E6E6;
 }
 
 .home--p {
@@ -150,7 +150,7 @@ body {
 }
 .btn--home a {
   text-decoration: none;
-  color: #fff;
+  color: #E6E6E6;
 }
 
 .btn--curriculum {
@@ -166,7 +166,7 @@ body {
 }
 .btn--curriculum a {
   text-decoration: none;
-  color: #fff;
+  color: #E6E6E6;
 }
 
 .sobre {
@@ -189,7 +189,7 @@ body {
 }
 .sobre .title--sobre:hover {
   font-size: 3.1rem;
-  color: #429cbf;
+  color: #8338ec;
 }
 .sobre .p--sobre {
   width: 90%;
@@ -204,7 +204,7 @@ body {
   color: #ebebeb;
 }
 .sobre .p--sobre a:hover {
-  color: #1d5a72;
+  color: #8338ec;
 }
 .sobre .p--sobre::before {
   content: "";
@@ -237,7 +237,7 @@ body {
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 1rem;
-  color: #fff;
+  color: #E6E6E6;
   width: 80%;
 }
 .exp--pro .title--exp {
@@ -267,14 +267,12 @@ body {
   border: 1px solid rgba(23, 23, 23, 0.3);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
-  color: #fff;
+  justify-content: space-between;
+  padding: 2rem 13rem;
+  color: #E6E6E6;
   margin-top: 2rem;
-  margin-bottom: 3rem;
 }
 .container--tec__items {
-  margin: 0 auto;
   padding: 1rem;
   font-weight: 600;
   text-align: center;
@@ -283,12 +281,12 @@ body {
 }
 
 .img--tec {
-  width: 4.3rem;
-  height: 4.3rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 .img--tec:hover {
   background-color: white;
@@ -333,7 +331,7 @@ body {
   margin: 0 auto;
   margin-bottom: 1rem;
   text-transform: lowercase;
-  color: #fff;
+  color: #E6E6E6;
   font-size: 0.8rem;
   border-radius: 6px;
 }
@@ -342,7 +340,7 @@ body {
 }
 .projetos button a {
   text-decoration: none;
-  color: #fff;
+  color: #E6E6E6;
 }
 .projetos .projeto--info {
   margin: 0 auto;
@@ -360,7 +358,7 @@ body {
   border: 1px solid rgba(13, 13, 13, 0.33);
 }
 .projetos .projeto--item:hover {
-  background-color: rgb(186, 186, 186);
+  background-color: #798289;
   color: black;
 }
 .projetos .btn-flex {
@@ -404,18 +402,18 @@ body {
   font-weight: bolder;
 }
 .contato__email {
-  color: #fff;
+  color: #E6E6E6;
 }
 .contato button {
   width: 15vw;
 }
 .contato button a {
   text-decoration: none;
-  color: #fff;
+  color: #E6E6E6;
 }
 
 footer {
-  background-color: #171717;
+  background-color: #111111;
   display: flex;
   height: 2.8rem;
   align-items: center;
@@ -440,7 +438,7 @@ header {
   }
   .home button a {
     text-decoration: none;
-    color: #fff;
+    color: #E6E6E6;
   }
   .home .home__nome {
     margin-top: 1rem;
