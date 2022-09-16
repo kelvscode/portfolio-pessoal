@@ -45,6 +45,10 @@ header {
         border:1px solid white;
         cursor:pointer;
         position: static;
+        a{
+            text-decoration: none;
+            color:white;
+        }
     }
 
     @media (min-width:1300px){

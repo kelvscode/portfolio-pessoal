@@ -45,6 +45,10 @@ button {
   cursor: pointer;
   position: static;
 }
+button a {
+  text-decoration: none;
+  color: white;
+}
 
 @media (min-width: 1300px) {
   header {
